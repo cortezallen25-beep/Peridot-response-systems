@@ -1,0 +1,22 @@
+=== Peridot 60-Second System — SIMULATED end-to-end test ===
+Telephony is SIMULATED: no real SMS, no real calls.
+PASS: service starts (stdlib http.server, no API key)
+PASS: SIMULATED missed call accepted / lead created — status=201 lead_id=lead-57a61f20
+PASS: SIMULATED textback fired on lead creation
+PASS: textback delta < 60 seconds — delta=0.001345s (missed 2026-10-20T10:45:29.083956+00:00 -> textback 2026-10-20T10:45:29.085301+00:00)
+PASS: timeline records missed_call + textback events — kinds=['missed_call_SIMULATED', 'textback_or_sms_sent_SIMULATED', 'textback_proof']
+PASS: SIMULATED textback appended to outbox log
+PASS: qualification conversation completed (all fields captured) — qualification={'name': 'Maria Gonzalez', 'job_type': 'Burst pipe in the kitchen', 'location': 'Ferguson, 63135', 'timeline': 'URGENT — water is leaking everywhere, need someone today', 'urgency': 'urgent', 'budget_range': '$500-$1,500', 'outcome': 'Qualified — urgent path (Burst pipe in the kitchen in Ferguson, 63135, budget $500-$1,500)'}
+PASS: URGENT path taken for urgent job — path=urgent
+PASS: URGENT path is visibly labelled in the thread
+PASS: every conversation step is timestamped in the record — inbound_messages=5 timeline_events=16
+PASS: qualification outcome recorded — status=booked outcome=Qualified — urgent path (Burst pipe in the kitchen in Ferguson, 63135, budget $500-$1,500)
+PASS: appointment booked from local slot store — booking={'slot_id': 'slot-001', 'slot_label': 'Mon Oct 27, 8:00 AM CT', 'slot_start': '2026-10-27T08:00:00-05:00', 'priority': True, 'calendar_event_id': None, 'booked_at': '2026-10-20T10:45:29.095171+00:00', 'simulated': True}
+PASS: booked slot marked taken in the slot store — slot={'booked_by': 'lead-57a61f20', 'id': 'slot-001', 'label': 'Mon Oct 27, 8:00 AM CT', 'start': '2026-10-27T08:00:00-05:00', 'taken': True}
+PASS: PLANNED path taken for a planned project — path=planned
+PASS: urgent and planned paths book different slots — urgent_slot=slot-001 planned_slot=slot-002
+PASS: full customer record retrievable (GET /api/leads/<id>)
+PASS: lead page shows SIMULATED label + textback delta proof
+PASS: dashboard lists leads with SIMULATED label
+=== 18/18 stages passed ===
+OVERALL: PASS (SIMULATED demo e2e)
