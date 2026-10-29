@@ -104,3 +104,25 @@ Telephony is SIMULATED and is labelled "SIMULATED" in the UI, the logs,
 the API records, and the test output. Do not present this demo as sending
 real texts. Swapping in a real telephony provider is a production step
 outside this hackathon scaffold's scope.
+
+## API tooling (added Oct 29, 2026 — after the demo froze)
+
+The `tooling/` folder post-dates the frozen demo above and does not
+change it. `tooling/peridot_pipeline.py` runs the same pipeline — same
+flow, same questions, same rephrase system prompt, importing
+`mock_responder.py` read-only — as a CLI against the live Meta Model
+API (`muse-wonder-1.0`), with `mock` and `spark-open` backends
+alongside. Telephony stays SIMULATED in the tooling too: no real SMS is
+sent; output is printed and saved to a transcript under `tooling/runs/`.
+
+Evidence from the first live day (Oct 29, 2026):
+
+- [Live Wonder run transcript](tooling/runs/20261029T170532Z-wonder-run-d5419743.json)
+  — one full pipeline run on the live API (invented test lead only).
+- [Usage ledger](tooling/usage-ledger.md) — every live call logged;
+  8 Wonder calls, estimated $0.1010 of the $150 hackathon credit.
+
+Live runs need `META_MODEL_API_KEY` set in the environment (the
+`meta_client.py` pattern) — the key is never committed. See
+`tooling/README.md` for backends, run commands, and the honest
+Spark Open stand-in disclosure.

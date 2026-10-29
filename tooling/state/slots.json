@@ -1,0 +1,61 @@
+{
+  "comment": "SIMULATED local slot store for the demo. In production these slots come from Google Calendar \u2014 see the GOOGLE CALENDAR HOOK comment in app.py.",
+  "slots": [
+    {
+      "booked_by": "lead-48210d9c",
+      "id": "slot-001",
+      "label": "Mon Oct 27, 8:00 AM CT",
+      "start": "2026-10-27T08:00:00-05:00",
+      "taken": true
+    },
+    {
+      "booked_by": "lead-59b5fe7b",
+      "id": "slot-002",
+      "label": "Mon Oct 27, 10:30 AM CT",
+      "start": "2026-10-27T10:30:00-05:00",
+      "taken": true
+    },
+    {
+      "booked_by": null,
+      "id": "slot-003",
+      "label": "Mon Oct 27, 1:00 PM CT",
+      "start": "2026-10-27T13:00:00-05:00",
+      "taken": false
+    },
+    {
+      "booked_by": null,
+      "id": "slot-004",
+      "label": "Tue Oct 28, 8:00 AM CT",
+      "start": "2026-10-28T08:00:00-05:00",
+      "taken": false
+    },
+    {
+      "booked_by": null,
+      "id": "slot-005",
+      "label": "Tue Oct 28, 10:30 AM CT",
+      "start": "2026-10-28T10:30:00-05:00",
+      "taken": false
+    },
+    {
+      "booked_by": null,
+      "id": "slot-006",
+      "label": "Wed Oct 29, 8:00 AM CT",
+      "start": "2026-10-29T08:00:00-05:00",
+      "taken": false
+    },
+    {
+      "booked_by": null,
+      "id": "slot-007",
+      "label": "Wed Oct 29, 1:00 PM CT",
+      "start": "2026-10-29T13:00:00-05:00",
+      "taken": false
+    },
+    {
+      "booked_by": null,
+      "id": "slot-008",
+      "label": "Thu Oct 30, 8:00 AM CT",
+      "start": "2026-10-30T08:00:00-05:00",
+      "taken": false
+    }
+  ]
+}

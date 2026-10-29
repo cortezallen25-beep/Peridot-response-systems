@@ -1,0 +1,221 @@
+{
+  "run_id": "run-d5419743",
+  "backend": "wonder",
+  "model": "muse-wonder-1.0",
+  "stand_in_model": false,
+  "lead": {
+    "id": "lead-8d65a773",
+    "simulated": true,
+    "caller_number": "+1-314-555-0117",
+    "caller_name": null,
+    "status": "booked",
+    "stage": "done",
+    "path": "urgent",
+    "qualification": {
+      "name": "Dana Whitfield",
+      "job_type": "Burst pipe \u2014 water leaking under my kitchen sink",
+      "location": "Ferguson, 63135",
+      "timeline": "URGENT \u2014 it's leaking right now, today if possible",
+      "urgency": "urgent",
+      "budget_range": "$500 to $1,500",
+      "outcome": "Qualified \u2014 urgent path (Burst pipe \u2014 water leaking under my kitchen sink in Ferguson, 63135, budget $500 to $1,500)"
+    },
+    "booking": {
+      "slot_id": "slot-001",
+      "slot_label": "Mon Oct 27, 8:00 AM CT",
+      "slot_start": "2026-10-27T08:00:00-05:00",
+      "priority": true,
+      "simulated": true
+    },
+    "backend": "wonder",
+    "model": "muse-wonder-1.0",
+    "created_at": "2026-10-29T17:04:39.648554+00:00",
+    "thread": [
+      {
+        "dir": "out",
+        "stage": "textback",
+        "text": "Hi there! Sorry we missed your call \u2014 this is the (SIMULATED) textback from CLA Peridot, and we can get you booked right here by text. First up \u2014 what's your name?",
+        "source": "model",
+        "scripted": "Hi there, sorry we missed your call! This is the (SIMULATED) textback from CLA Peridot \u2014 we can get you booked right here by text. First up \u2014 what's your name?",
+        "usage": {
+          "completion_tokens": 496,
+          "prompt_tokens": 142,
+          "total_tokens": 638,
+          "completion_tokens_details": {
+            "reasoning_tokens": 445
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "cost_usd": 0.010488
+      },
+      {
+        "dir": "in",
+        "stage": "name",
+        "text": "Dana Whitfield"
+      },
+      {
+        "dir": "out",
+        "stage": "reply_after_name",
+        "text": "Thanks so much, Dana Whitfield! What kind of job is it? (e.g. burst pipe, bathroom remodel, fence repair)",
+        "source": "model",
+        "scripted": "Thanks, Dana Whitfield. What kind of job is it? (e.g. burst pipe, bathroom remodel, fence repair)",
+        "usage": {
+          "completion_tokens": 374,
+          "prompt_tokens": 127,
+          "total_tokens": 501,
+          "completion_tokens_details": {
+            "reasoning_tokens": 337
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "cost_usd": 0.007988
+      },
+      {
+        "dir": "in",
+        "stage": "job_type",
+        "text": "Burst pipe \u2014 water leaking under my kitchen sink"
+      },
+      {
+        "dir": "out",
+        "stage": "reply_after_job_type",
+        "text": "Perfect, got it! Where's the job located? (neighborhood or ZIP is fine)",
+        "source": "model",
+        "scripted": "Got it. Where's the job located? (neighborhood or ZIP is fine)",
+        "usage": {
+          "completion_tokens": 302,
+          "prompt_tokens": 118,
+          "total_tokens": 420,
+          "completion_tokens_details": {
+            "reasoning_tokens": 274
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "cost_usd": 0.006512
+      },
+      {
+        "dir": "in",
+        "stage": "location",
+        "text": "Ferguson, 63135"
+      },
+      {
+        "dir": "out",
+        "stage": "reply_after_location",
+        "text": "Hey! When do you need it done? If it's urgent \u2014 leaking, no water, safety issue \u2014 just say URGENT. Otherwise, tell me your ideal timeline.",
+        "source": "model",
+        "scripted": "When do you need it done? If it's urgent \u2014 leaking, no water, safety issue \u2014 say URGENT. Otherwise tell me your ideal timeline.",
+        "usage": {
+          "completion_tokens": 502,
+          "prompt_tokens": 132,
+          "total_tokens": 634,
+          "completion_tokens_details": {
+            "reasoning_tokens": 458
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "cost_usd": 0.010568000000000001
+      },
+      {
+        "dir": "in",
+        "stage": "timeline",
+        "text": "URGENT \u2014 it's leaking right now, today if possible"
+      },
+      {
+        "dir": "out",
+        "stage": "reply_after_timeline",
+        "text": "URGENT PATH: Got it \u2014 that sounds urgent, so I'm flagging this as a priority for you and we'll aim for the earliest slot we have. Last one: what's your budget range for this? (e.g. $500-$1,000, or 'not sure yet')",
+        "source": "model",
+        "scripted": "URGENT PATH: Understood \u2014 that sounds urgent, so I'm flagging this as a priority and we'll aim for the earliest slot we have. Last one: what's your budget range for this? (e.g. $500-$1,000, or 'not sure yet')",
+        "usage": {
+          "completion_tokens": 585,
+          "prompt_tokens": 157,
+          "total_tokens": 742,
+          "completion_tokens_details": {
+            "reasoning_tokens": 518
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "cost_usd": 0.012328
+      },
+      {
+        "dir": "in",
+        "stage": "budget",
+        "text": "$500 to $1,500"
+      },
+      {
+        "dir": "out",
+        "stage": "reply_after_budget",
+        "text": "URGENT PATH: Thanks so much \u2014 you're qualified and flagged PRIORITY! I'm booking you into our earliest open slot now\u2026",
+        "source": "model",
+        "scripted": "URGENT PATH: Thanks \u2014 you're qualified and flagged PRIORITY. Booking you into our earliest open slot now\u2026",
+        "usage": {
+          "completion_tokens": 309,
+          "prompt_tokens": 123,
+          "total_tokens": 432,
+          "completion_tokens_details": {
+            "reasoning_tokens": 275
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "cost_usd": 0.006672
+      },
+      {
+        "dir": "out",
+        "stage": "booking_confirm",
+        "text": "You're all booked! Mon Oct 27 at 8:00 AM CT \u2014 PRIORITY slot for your urgent job. We'll send you a reminder before then. (SIMULATED message \u2014 no real SMS was sent.)",
+        "source": "model",
+        "scripted": "You're booked: Mon Oct 27, 8:00 AM CT \u2014 PRIORITY slot for your urgent job. We'll send a reminder before then. (SIMULATED message \u2014 no real SMS was sent.)",
+        "usage": {
+          "completion_tokens": 339,
+          "prompt_tokens": 143,
+          "total_tokens": 482,
+          "completion_tokens_details": {
+            "reasoning_tokens": 286
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "cost_usd": 0.007351999999999999
+      },
+      {
+        "dir": "draft",
+        "stage": "followup_drafts",
+        "text": "DAY 3: Hi Dana, this is CLA Peridot checking in on the burst pipe leaking under your kitchen sink. You're booked for Mon Oct 27, 8:00 AM CT \u2014 can you reply to confirm the estimate visit?\nDAY 7: Hi Dana, just following up on your kitchen sink leak and your Mon Oct 27, 8:00 AM CT slot. Please reply to confirm the estimate visit still works for you.\nDAY 14: Hi Dana, final check-in on the burst pipe under your kitchen sink for Mon Oct 27, 8:00 AM CT. Please reply to confirm the estimate visit if you'd like to keep it.",
+        "source": "model",
+        "usage": {
+          "completion_tokens": 1909,
+          "prompt_tokens": 235,
+          "total_tokens": 2144,
+          "completion_tokens_details": {
+            "reasoning_tokens": 1765
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "cost_usd": 0.03912
+      }
+    ],
+    "textback": {
+      "body": "Hi there! Sorry we missed your call \u2014 this is the (SIMULATED) textback from CLA Peridot, and we can get you booked right here by text. First up \u2014 what's your name?",
+      "simulated": true
+    }
+  },
+  "booking_confirm": "You're all booked! Mon Oct 27 at 8:00 AM CT \u2014 PRIORITY slot for your urgent job. We'll send you a reminder before then. (SIMULATED message \u2014 no real SMS was sent.)",
+  "followups": "DAY 3: Hi Dana, this is CLA Peridot checking in on the burst pipe leaking under your kitchen sink. You're booked for Mon Oct 27, 8:00 AM CT \u2014 can you reply to confirm the estimate visit?\nDAY 7: Hi Dana, just following up on your kitchen sink leak and your Mon Oct 27, 8:00 AM CT slot. Please reply to confirm the estimate visit still works for you.\nDAY 14: Hi Dana, final check-in on the burst pipe under your kitchen sink for Mon Oct 27, 8:00 AM CT. Please reply to confirm the estimate visit if you'd like to keep it.",
+  "live_calls": 8,
+  "run_cost_usd": 0.101028,
+  "finished_at": "2026-10-29T17:05:32.050549+00:00"
+}

@@ -1,0 +1,17 @@
+{
+  "credit_usd": 150.0,
+  "backends": {
+    "wonder": {
+      "calls": 8,
+      "tokens_in": 1177,
+      "tokens_out": 4816,
+      "cost_usd": 0.101028
+    },
+    "spark-open": {
+      "calls": 8,
+      "tokens_in": 1207,
+      "tokens_out": 443,
+      "cost_usd": 0.0
+    }
+  }
+}
