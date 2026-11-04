@@ -18,7 +18,7 @@ were not installed on the host and nothing was pip-installed.
 ## Run the service
 
 ```bash
-cd ~/workspace/hackathon/demo
+# from the root of your clone of this repository:
 python3 app.py            # http://127.0.0.1:8765/
 PORT=9000 python3 app.py  # custom port
 ```
@@ -56,7 +56,7 @@ records), `outbox.log` (one JSON line per simulated SMS), `slots.json`
 ## Run the test
 
 ```bash
-cd ~/workspace/hackathon/demo
+# from the root of your clone of this repository:
 python3 e2e_test.py
 ```
 
